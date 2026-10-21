@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- The head contains the page title, mobile settings, and linked stylesheet. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111b3b">
+  <meta name="description" content="Sam Ale College of Advanced Studies website, programmes, and admissions information.">
+  <title>Sam Ale College of Advanced Studies | SACAS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- The header is the same at the top of each page. -->
+  <div class="topline"><div class="container topline-content"><span>Kwali, Federal Capital Territory</span><a href="mailto:admission@samalecollege.edu.ng">admission@samalecollege.edu.ng</a></div></div>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#home" aria-label="SACAS home"><img class="brand-mark" src="images/sacas-logo.jpg" alt="SACAS college crest"><span><strong>SACAS</strong><small>Sam Ale College of Advanced Studies</small></span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+      <nav class="navigation" id="main-navigation" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#programmes">Programmes</a><a href="#admissions">Admissions</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions"><a class="button button-gold" href="#admissions">Apply now</a></div>
+    </div>
+  </header>
+
+  <!-- Each section below is real, readable HTML for a part of the website. -->
+  <main id="home-page" class="page">
+    <section class="hero container" id="home">
+      <div class="hero-copy"><p class="eyebrow"><span></span> Sam Ale College of Advanced Studies</p><h1>Learn with purpose.<br><em>Lead with confidence.</em></h1><p class="hero-description">Education that opens doors and a community that helps you walk through them. Explore our NCE and advanced studies pathways in Kwali, Abuja.</p><div class="button-row"><a class="button button-gold" href="#admissions">Explore admissions <span>→</span></a><a class="button button-text" href="#programmes">Discover our programmes <span>↘</span></a></div><div class="hero-note"><span class="note-icon">✦</span><span><strong>Educate. Empower. Excel.</strong><small>A college built around student growth.</small></span></div></div>
+      <div class="hero-photo" id="hero-slider" role="region" aria-label="Life and learning at SACAS" aria-roledescription="carousel" tabindex="0">
+        <div class="hero-slides">
+          <figure class="hero-slide active" data-slide="0"><img src="images/group-photo.jpg" alt="Sam Ale College students and staff together"><figcaption>Our campus, our community</figcaption></figure>
+          <figure class="hero-slide" data-slide="1" hidden><img src="images/home-students-studying.jpg" alt="Students studying together in a classroom"><figcaption>Learning together, moving forward</figcaption></figure>
+          <figure class="hero-slide" data-slide="2" hidden><img src="images/student-writing.jpg" alt="A student writing notes during study"><figcaption>Ideas taking shape through learning</figcaption></figure>
+          <figure class="hero-slide" data-slide="3" hidden><img src="images/student-library-study.jpg" alt="A student reading in the college library"><figcaption>Space to focus and grow</figcaption></figure>
+        </div>
+        <button class="slider-control slider-previous" type="button" aria-label="Show previous photo">‹</button>
+        <button class="slider-control slider-next" type="button" aria-label="Show next photo">›</button>
+        <div class="slider-footer"><div class="slider-dots" aria-label="Choose a photo"><button class="slider-dot active" type="button" aria-label="Show photo 1" aria-current="true"></button><button class="slider-dot" type="button" aria-label="Show photo 2"></button><button class="slider-dot" type="button" aria-label="Show photo 3"></button><button class="slider-dot" type="button" aria-label="Show photo 4"></button></div><button class="slider-pause" type="button" aria-label="Pause automatic photo changes">Pause</button></div>
+        <span class="visually-hidden" id="slider-announcement" aria-live="polite"></span>
+      </div>
+    </section>
+    <div class="hero-ribbon"><div class="container ribbon-content"><span>Based in Kwali, Federal Capital Territory</span><span>College of Education · Advanced Studies</span><a href="#about">Get to know us →</a></div></div>
+
+    <section class="about-story section" id="about">
+      <div class="container about-story-grid">
+        <div class="about-story-image"><img src="images/group-photo.jpg" alt="Sam Ale College students and staff together"><span>Sam Ale College · Kwali, Abuja</span></div>
+        <div class="about-story-copy"><p class="eyebrow">About Sam Ale College</p><h2>Education with a clear sense of <em>purpose.</em></h2><p class="about-lead">A college community committed to helping students grow through learning, guidance and opportunity.</p><h3>Our story</h3><p>Sam Ale College of Advanced Studies brings together its College of Education and advanced studies pathways in a focused campus environment in Kwali, Abuja.</p><p>The college was established with a commitment to accessible, supportive education. Its NCE programme received approval from the National Commission for Colleges of Education in March 2017, according to the college information provided on the original website.</p><a class="button button-outline" href="#programmes">Explore our programmes →</a></div>
+      </div>
+    </section>
+    <section class="founder-section">
+      <div class="container founder-grid">
+        <!-- This is an intentional temporary placeholder for the founder portrait. -->
+        <div class="founder-placeholder" role="img" aria-label="Portrait placeholder for Professor Sam O. Ale"><span class="founder-placeholder-mark">SA</span><strong>Portrait placeholder</strong><small>Professor Sam O. Ale</small></div>
+        <div class="founder-copy"><p class="eyebrow">Founder &amp; Chancellor</p><h2>Prof. Sam O. Ale</h2><p>Professor Sam O. Ale began his career at the School of Basic Studies, Ahmadu Bello University, Zaria. He became a Professor of Mathematics and Mathematics Education at Abubakar Tafawa Balewa University, Bauchi, in 1988.</p><p>His long-standing commitment to advanced studies and education informs the college’s founding vision.</p><p class="founder-signature">Educate · Empower · Excel</p></div>
+      </div>
+    </section>
+
+    <section class="section programmes" id="programmes"><div class="container"><div class="section-heading"><p class="eyebrow">Find your pathway</p><h2>A strong start for what comes next.</h2><p>Explore the academic pathways offered by Sam Ale College and find the right place to begin.</p></div><div class="program-grid">
+      <article class="program-card"><img src="images/students-learning.jpg" alt="Students learning in a classroom"><div><span class="eyebrow">College of Education</span><h3>National Certificate in Education</h3><p>Build teaching knowledge, practical skills, and a strong foundation for a career in education.</p><a href="#admissions">Explore programme →</a></div></article>
+      <article class="program-card"><img src="images/classroom-teaching.jpg" alt="A lecturer teaching students"><div><span class="eyebrow">Advanced Studies</span><h3>IJMB / JUPEB</h3><p>Prepare for the next academic step through a focused advanced studies pathway.</p><a href="#admissions">Explore programme →</a></div></article>
+    </div></div></section>
+
+    <section class="section campus"><div class="container"><div class="section-heading"><p class="eyebrow">Campus life</p><h2>Room to learn, space to grow.</h2><p>A focused environment, shared experience and everyday moments that make a college community.</p></div><div class="campus-grid"><img src="images/exam-hall.jpg" alt="Students working in an examination hall"><img src="images/classroom-lab.jpg" alt="Students learning together"><img src="images/classroom-teaching.jpg" alt="A college class in progress"></div></div></section>
+
+    <section class="admissions" id="admissions"><div class="container admissions-content"><div><p class="eyebrow">Your next step starts here</p><h2>Ready to begin<br><em>your application?</em></h2><p>Choose the study pathway that fits your plans. You can complete the form here in your browser.</p></div><div class="admission-buttons"><button class="button button-gold" data-apply="college" type="button">Apply — College of Education <span>→</span></button><button class="button button-outline" data-apply="ijmb" type="button">Apply — IJMB / JUPEB <span>→</span></button></div></div></section>
+
+    <section class="section contact container" id="contact"><div><p class="eyebrow">Get in touch</p><h2>Let’s start a <em>conversation.</em></h2><p>For programme, application, or campus questions, contact the admissions team.</p><a class="contact-email" href="mailto:admission@samalecollege.edu.ng">admission@samalecollege.edu.ng</a><a class="contact-phone" href="tel:07036627725">07036627725</a></div><form id="contact-form" class="simple-form"><h3>Send an enquiry</h3><label>Your name<input name="name" autocomplete="name" required></label><label>Email address<input name="email" type="email" autocomplete="email" required></label><label>Message<textarea name="message" rows="4" required></textarea></label><button class="button button-gold" type="submit">Prepare email →</button><p class="form-note" id="contact-message" aria-live="polite"></p></form></section>
+  </main>
+
+  <!-- Applying is a real HTML form. JavaScript only switches between its steps. -->
+  <main id="application-page" class="page hidden">
+    <section class="application container"><button class="back-link" data-open="home-page" type="button">← Back to the website</button><p class="eyebrow">Sam Ale College of Advanced Studies</p><h1 id="application-title">College of Education application</h1><p>Complete the steps below to prepare your application enquiry. This front-end demonstration does not send your information to a server.</p>
+      <div class="steps" aria-label="Application steps"><span class="step active" data-step-label="1">1. Basic information</span><span class="step" data-step-label="2">2. Education</span><span class="step" data-step-label="3">3. Documents</span></div>
+      <form id="application-form">
+        <section class="form-step active" data-step="1"><div class="form-grid"><label>First name *<input name="firstName" autocomplete="given-name" required></label><label>Last name *<input name="lastName" autocomplete="family-name" required></label><label>Father’s name *<input name="fatherName" required></label><label>Mother’s name *<input name="motherName" required></label><label>Phone *<input name="phone" type="tel" autocomplete="tel" required></label><label>Email *<input name="email" type="email" autocomplete="email" required></label><label>Gender *<select name="gender" required><option value="">Select</option><option>Female</option><option>Male</option><option>Prefer not to say</option></select></label><label>Date of birth *<input name="dob" type="date" required></label><label class="wide">Home address *<input name="address" autocomplete="street-address" required></label></div></section>
+        <section class="form-step" data-step="2"><div class="form-grid"><label>Last school attended *<input name="school" required></label><label>Examination body *<select name="examBody" required><option value="">Select</option><option>WAEC</option><option>NECO</option><option>NABTEB</option><option>Other</option></select></label><label>Examination year *<input name="examYear" type="number" min="1990" max="2035" required></label><label id="pathway-label">Preferred study pathway *<select name="pathway" required><option>College of Education (NCE)</option><option>IJMB</option><option>JUPEB</option></select></label><label class="wide">Subjects and grades *<textarea name="subjects" rows="4" placeholder="Example: English — B2, Mathematics — C4" required></textarea><small>Enter each subject and the grade you received.</small></label></div></section>
+        <section class="form-step" data-step="3"><div class="form-grid"><label>Examination result (image or document) *<input name="resultFile" type="file" accept="image/*,.pdf,.doc,.docx" required><small>Choose a picture or file from this device. It will not be uploaded.</small></label><label>Passport photograph *<input name="passportFile" type="file" accept="image/*" required><small>Image files only. The file stays on this device.</small></label></div><p class="upload-notice">This is a front-end-only form. Selected files are not transmitted or saved online. The form will prepare an email and list the chosen file names.</p><p id="application-result" class="form-note" aria-live="polite"></p></section>
+        <div class="form-actions"><span id="required-note">* Required information</span><div><button class="button button-outline" id="previous-step" type="button" disabled>Previous</button><button class="button button-gold" id="next-step" type="button">Continue →</button><button class="button button-gold hidden" id="submit-application" type="submit">Prepare application email →</button></div></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-content"><a class="brand" href="#home" aria-label="SACAS home"><img class="brand-mark" src="images/sacas-logo.jpg" alt="SACAS college crest"><span><strong>SACAS</strong><small>Sam Ale College of Advanced Studies</small></span></a><div><strong>Explore</strong><a href="#about">About</a><a href="#programmes">Programmes</a><a href="#admissions">Admissions</a></div><div><strong>Study pathways</strong><a href="#programmes">College of Education</a><a href="#programmes">IJMB / JUPEB</a><a href="#admissions">Apply now</a></div><div><strong>Contact</strong><a href="mailto:admission@samalecollege.edu.ng">admission@samalecollege.edu.ng</a><a href="tel:07036627725">07036627725</a></div></div><div class="container footer-bottom">© 2026 Sam Ale College of Advanced Studies <span>Educate · Empower · Excel</span></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
