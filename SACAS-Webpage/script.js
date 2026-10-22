@@ -195,8 +195,11 @@ applicationForm.addEventListener('submit', (event) => {
   const emailSubject = encodeURIComponent(`${applicationTitle.textContent} enquiry`)
   const emailBody = encodeURIComponent([
     `Applicant: ${formData.get('firstName')} ${formData.get('lastName')}`,
+    `Father's name: ${formData.get('fatherName')}`,
+    `Mother's name: ${formData.get('motherName')}`,
     `Email: ${formData.get('email')}`,
     `Phone: ${formData.get('phone')}`,
+    `Gender: ${formData.get('gender')}`,
     `Date of birth: ${formData.get('dob')}`,
     `Address: ${formData.get('address')}`,
     `School: ${formData.get('school')}`,
@@ -208,7 +211,7 @@ applicationForm.addEventListener('submit', (event) => {
   ].join('\n'))
 
   document.querySelector('#application-result').textContent =
-    'Your email app will open with the application details. Attach the selected files yourself, then send the email to submit your enquiry.'
+    'An email draft is being opened. Review its details, attach the selected files yourself, and send it to submit your application enquiry. If no email app opens, contact admissions directly using the email link on this page.'
   window.location.href = `mailto:admission@samalecollege.edu.ng?subject=${emailSubject}&body=${emailBody}`
 })
 
@@ -218,7 +221,7 @@ document.querySelector('#contact-form').addEventListener('submit', (event) => {
   const formData = new FormData(event.currentTarget)
   const subject = encodeURIComponent(`College enquiry from ${formData.get('name')}`)
   const body = encodeURIComponent(`Reply to: ${formData.get('email')}\n\n${formData.get('message')}`)
-  document.querySelector('#contact-message').textContent = 'Your email app is opening. Send the prepared email to complete your enquiry.'
+  document.querySelector('#contact-message').textContent = 'An email draft is being opened. Review and send it to submit your enquiry. If no email app opens, contact admissions directly using the email link on this page.'
   window.location.href = `mailto:admission@samalecollege.edu.ng?subject=${subject}&body=${body}`
 })
 
